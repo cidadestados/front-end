@@ -13,7 +13,7 @@
       <div class="container">
         <div class="row">
           <header class="col-md-12">
-            <div class="logo"><img src="assets/img/logo.png" alt="Cidadestados.org"></div>
+            <div class="logo"><a href="/"><img src="assets/img/logo.png" alt="Cidadestados.org"></a></div>
           </header>
         </div>
       </div>
@@ -85,13 +85,23 @@
 
     <div class="container">
       <div class="pull-left">
-        <p class="text-muted">Este projeto é licenciado sobre a MIT.</p>
+        <p class="text-muted">
+          Este projeto é licenciado sobre a
+          <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
+        </p>
       </div>
 
       <div class="pull-right">
-        <a href="https://github.com/cidadestados/" target="_blank">GitHub</a>
+        <a href="https://github.com/cidadestados/" target="_blank">Contribua através do GitHub</a>.
       </div>
     </div>
   </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script>
+    $('#addresses li input[type=text]').on('mouseenter', function () {
+      $(this).select();
+    });
+  </script>
 </body>
 </html>

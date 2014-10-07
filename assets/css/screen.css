@@ -36,8 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #addresses li input[type=text] {
-  font-size: 1.4em;
-  height: 50px;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+}
+
+#addresses li input[type=text]:hover {
+  color: #000;
 }
 
 #addresses p {
@@ -46,4 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #addresses .block {
   margin: 20px 0;
+}
+
+::selection {
+  background-color: #a6e3cd;
+}
+
+::-moz-selection {
+  background-color: #a6e3cd; /* Gecko Browsers */
 }
