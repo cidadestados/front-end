@@ -53,9 +53,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background-color: #a6e3cd;
+  background-color: #d7f0e7;
 }
 
 ::-moz-selection {
-  background-color: #a6e3cd; /* Gecko Browsers */
+  background-color: #d7f0e7; /* Gecko Browsers */
 }
