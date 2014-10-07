@@ -1,11 +1,49 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  font-family: "Lucida Sans Unicode", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+.banner {
+  background-color: #fff;
+  width: 100%;
+}
+
+.banner header {
+  margin: 40px 0 20px;
+}
+
+.presentation h2 {
+  color: #008658;
+}
+
+.presentation p.lead {
+  color: #666;
+  margin: 40px 0;
+}
+
+#addresses {
+  margin: 0;
+  padding: 0;
 }
 
 #addresses li {
+  margin: 20px 0;
+  list-style: none;
+}
+
+#addresses li input[type=text] {
+  font-size: 1.4em;
+  height: 50px;
+}
+
+#addresses p {
+  color: #666;
+}
+
+#addresses .block {
   margin: 20px 0;
 }

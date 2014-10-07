@@ -2,61 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>API para as cidades e estados brasileiros - Cidadestados.org</title>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+  <title>A sua API pública para as cidades e os estados brasileiros. — Cidadestados.org</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/screen.css">
 </head>
 <body>
   <div class="app">
-    <div class="jumbotron">
+    <div class="banner">
       <div class="container">
-        <h1>Cidadestados.org</h1>
-        <h4>API pública para persistir dados das cidades e estados brasileiros.</h4>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>O que é?</h4>
-
-          <p>
-            Para que você não ter que reinventar a roda
-            toda vez que for criar um aplicativo que exija
-            a persistência entre as cidades e os estados brasileiros,
-            o <a href="/">Cidadestados.org</a> disponibiliza esta API pública
-            para que você tenha, através do formato
-            <a href="http://json.org/" target="_blank">JSON</a>, toda a informação
-            que precisar.
-          </p>
-        </div>
-        <div class="col-md-8">
-          <h4>Como fazer?</h4>
-
-          <p>
-            Faça uma requisição do tipo <code>GET</code> para um dos endereços
-            a seguir e você terá uma resposta do tipo <strong>JSON</strong>
-            prontinha para ser iterada:
-          </p>
-
-          <hr>
-
-          <ul id="addresses">
-            <li>
-              <p>Lista de todos os estados:</p>
-
-              <code>http://cidadestados.org/estados/</code>
-            </li>
-            <li>
-              <p>Informações de um estado (por UF), incluindo suas cidades:</p>
-
-              <code>http://cidadestados.org/estados/sp/</code>
-            </li>
-          </ul>
+        <div class="row">
+          <header class="col-md-12">
+            <div class="logo"><img src="assets/img/logo.png" alt="Cidadestados.org"></div>
+          </header>
         </div>
       </div>
     </div>
+
+    <hr>
+
+    <section class="presentation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Não reinvente a roda!</h2>
+
+            <p class="lead">
+              O objetivo do <a href="/">Cidadestados.org</a> é disponibilizar
+              uma API em formato <strong>JSON</strong> ou <strong>XML</strong>
+              para que você consiga, sob demanda, persistir entre os estados e
+              as cidades do Brasil sem ter que modelar um banco de dados próprio.
+            </p>
+          </div>
+
+          <div class="col-md-8">
+            <h2>Como funciona?</h2>
+
+            <p class="lead">
+              Faça uma requisição do tipo <code>GET</code> para um dos endereços
+              a seguir:
+            </p>
+
+            <ul id="addresses">
+              <li>
+                <p>Para resgatar todos os estados:</p>
+                <input type="text" class="form-control" value="http://cidadestados.org/estados/">
+              </li>
+              <li><hr></li>
+              <li>
+                <p>Para resgatar um estado em específico, utilize o <strong>UF</strong> correspondente:</p>
+                <input type="text" class="form-control" value="http://cidadestados.org/estados/sc/">
+              </li>
+              <li><hr></li>
+              <li>
+                <div class="block">
+                  <p>
+                    O formato padrão é <strong>JSON</strong>. Mas, se desejar,
+                    pode utilizar XML apenas inserindo o formato como sufixo:
+                  </p>
+                  <input type="text" class="form-control" value="http://cidadestados.org/estados.xml/">
+                </div>
+
+                <div class="block">
+                  <p>
+                    Ou ainda:
+                  </p>
+                  <input type="text" class="form-control" value="http://cidadestados.org/estados/sc.xml/">
+                </div>
+              </li>
+              <li><hr></li>
+              <li>
+                <p>Se preferir a nomenclatura das colunas em inglês, apenas localize a URL:</p>
+                <input type="text" class="form-control" value="http://cidadestados.org/states/">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <hr>
 
@@ -66,7 +89,7 @@
       </div>
 
       <div class="pull-right">
-        <a href="https://github.com/cidadestados/">GitHub</a>
+        <a href="https://github.com/cidadestados/" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
