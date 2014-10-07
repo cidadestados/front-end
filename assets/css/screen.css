@@ -8,12 +8,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-  background-color: #fff;
+  background: url('../img/header_background.jpg') top center no-repeat;
   width: 100%;
 }
 
 .banner header {
-  margin: 40px 0 20px;
+  margin: 30px 0;
+}
+
+.presentation {
+  padding: 40px 0;
 }
 
 .presentation h2 {
