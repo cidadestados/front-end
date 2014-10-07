@@ -1,0 +1,20 @@
+{
+  "name": "cidadestados.org",
+  "version": "0.0.1",
+  "authors": [
+    "Guilherme Oderdenge <guilhermeoderdenge@gmail.com>"
+  ],
+  "description": "Uma API pública pra você trabalhar com os estados e cidades brasileiros.",
+  "main": "index.html",
+  "keywords": [
+    "brasil",
+    "api",
+    "estados",
+    "cidades"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}
